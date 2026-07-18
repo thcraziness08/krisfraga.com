@@ -45,6 +45,18 @@ h1{
 }
 h1 span{color:var(--blueprint)}
 h1 .dot{color:var(--gold)}
+.verse{
+  display:block;
+  margin-top:26px;
+  font-family:Menlo, Consolas, monospace;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#4A5560;
+  text-decoration:none;
+}
+.verse:hover{color:var(--blueprint)}
+.verse:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:3px}
 .roofline{
   display:block;
   width:100%;
@@ -62,7 +74,10 @@ h1 .dot{color:var(--gold)}
 </head>
 <body>
   <main>
-    <h1>JESUS<br><span>IS LORD</span><span class="dot">.</span></h1>
+    <div>
+      <h1>JESUS<br><span>IS LORD</span><span class="dot">.</span></h1>
+      <a class="verse" href="https://bible.com/bible/116/eph.5.14.NLT" style="text-align:center">Awake, O sleeper &middot; Ephesians 5:14 &rarr;</a>
+    </div>
   </main>
   <svg class="roofline" viewBox="0 0 1440 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="none">
     <path d="M0 150 L0 120 L340 120 L560 30 L580 30 L580 8 L596 8 L596 30 L800 30 L1080 120 L1440 120 L1440 150 Z" fill="#20262E"/>
